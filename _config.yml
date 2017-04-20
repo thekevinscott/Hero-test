@@ -1,15 +1,13 @@
 title: React Native For Web Developers
-subtitle: "A fast, simple & powerful blog framework powered by Node.js."
-description: "Hexo is a fast, simple & powerful blog framework powered by Node.js."
+description: "React Native Tutorials for Web Developers"
 author: Kevin Scott
 language: en
 timezone: UTC
-url: https://thekevinscott.github.io/reactnativeforwebdevelopers/
+url: https://reactnativeforwebdevelopers.com
 root: /
-permalink: news/:year/:month/:day/:title/
-archive_dir: news
+permalink: :title/
 code_dir: downloads/code
-new_post_name: :year-:month-:day-:title.md # File name of new posts
+new_post_name: :title.md # File name of new posts
 post_asset_folder: true
 highlight:
   enable: true
@@ -21,4 +19,4 @@ deploy:
   type: git
   repo: git@github.com:thekevinscott/reactnativeforwebdevelopers.git
 
-google_analytics: UA-4910098-10
+google_analytics:
