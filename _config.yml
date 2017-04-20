@@ -18,5 +18,3 @@ theme: kevin
 deploy:
   type: git
   repo: git@github.com:thekevinscott/reactnativeforwebdevelopers.git
-
-google_analytics: UA-70988756-3
