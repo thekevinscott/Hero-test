@@ -10,13 +10,6 @@
     {%- include '_partial/slideout.swig' %}
     {%- include '_partial/header.swig' %}
     <div class="container" id="mobile-panel">
-      <header id="header" class="header">
-        <div class="banner">
-          <h1>Leverage your React skills to build mobile apps.</h1>
-          <h2>You already know React. Using React Native, you can start building native mobile apps today - using the same tools you already know.</h2>
-        </div>
-      </header>
-
       <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">

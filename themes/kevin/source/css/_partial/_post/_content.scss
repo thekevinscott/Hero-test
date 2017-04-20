@@ -3,10 +3,24 @@
 // ==============================
 
 .post-content {
+  .page-title {
+    margin-bottom: 80px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #CCC;
+  }
+
   @for $i from 1 through 6 {
     h#{$i} {
       font-weight: 400;
       font-family: $global-serif-font-family;
+
+      &:hover {
+        .headerlink {
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 
@@ -16,10 +30,14 @@
     }
 
     &::before {
+      position: absolute;
+      margin-left: -25px;
+      opacity: 0;
       content: $content-headings-anchor;
       margin-right: 5px;
       font-size: 1.1em;
       color: $theme-color;
+      transition-duration: 0.4s;
     }
   }
 
