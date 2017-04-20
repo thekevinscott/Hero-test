@@ -1,0 +1,10 @@
+// ==============================
+// Post footer
+// =============================
+
+.footer {
+  margin-top: 100px;
+
+  @import "_footer/social";
+  @import "_footer/copyright";
+}

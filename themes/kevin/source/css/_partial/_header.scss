@@ -1,0 +1,100 @@
+// ==============================
+// Header
+// ==============================
+
+.header {
+  @include clearfix; 
+  padding: $header-padding;
+}
+
+// ==============================
+// Logo
+// =============================
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@include max-screen() {
+  .logo-wrapper {
+    display: none;
+  }
+}
+
+.header-top {
+  padding: 10px 25px;
+  background-color: #f2f4f7;
+  color: #4c515d;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  display: flex;
+  min-height: 79px;
+  display: none;
+}
+
+.site-navbar {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    font-family: $global-serif-font-family;
+    display: flex;
+    align-items: center;
+
+    .menu-item {
+      display: inline-block;
+
+      & + .menu-item {
+        margin-left: $menu-item-margin-left;;
+      }
+
+      @include underline-from-center;
+    }
+
+    .menu-item-link {
+      font-size: $menu-link-font-size;
+    }
+  }
+}
+
+@import '_header/search';
+
+@include max-screen() {
+  .site-navbar {
+    display: none;
+  }
+}
+
+
+@include max-screen() {
+  .header {
+    padding: 50px 0 0;
+    text-align: center;
+  }
+}
+
+.header {
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    line-height: 1.3;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 34px;
+    font-weight: normal;
+  }
+}
