@@ -1,6 +1,6 @@
 {% extends "_layout.swig" %}
 
-{% block title %} {{ page.title }} · {{ config.title }} {% endblock %}
+{% block title %}{% if page.title %}{{ page.title }} ·{% endif %}{{ config.title }} {% endblock %}
 
 {% block content %}
   <article class="post">
