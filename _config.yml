@@ -14,7 +14,7 @@ highlight:
   line_number: false
 per_page: 0
 
-theme: kevin 
+theme: reactnativecafe
 deploy:
   type: git
   repo: git@github.com:thekevinscott/reactnativeforwebdevelopers.git

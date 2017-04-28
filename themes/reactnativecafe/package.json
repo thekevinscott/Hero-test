@@ -1,0 +1,8 @@
+{
+  "name": "reactnativecafe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^3.12.0"
+  }
+}
